@@ -6,5 +6,58 @@
                 x1="0.000385741" y1="-0.000525851" z1="0.0330364" roll1="0" pitch1="0" yaw1="0"
                 mass="0.332505"
                 ixx="0.00101221" ixy="-5.71129e-07" ixz="-7.85419e-07" iyy="0.00101221" iyz="-7.85419e-07" izz="0.00181553"
-                r="" g="" b="" a=""/>
+                r="0.615686" g="0.811765" b="0.929412" a="1"
+                x2="0.000289337" y2="-0.000622255" z2="0.0100389" roll2="-3.57353e-16" pitch2="2.97332e-15" yaw2="0.785398"/>
+
+    <xacro:link link_name="omni_wheel_1"
+                x1="8.57539e-19" y1="-1.25703e-18" z1="-0.006" roll1="0" pitch1="0" yaw1="0"
+                mass="0.0187413"
+                ixx="3.45051e-06" ixy="2.12654e-37" ixz="-1.45049e-37" iyy="3.45051e-06" iyz="1.45388e-37" izz="6.18323e-06"
+                r="0.615686" g="0.811765" b="0.929412" a="1"
+                x2="0" y2="0" z2="-0.012" roll2="-1.5708" pitch2="-2.46991e-32" yaw2="1.54074e-33"/>
+
+    <xacro:joint joint_name="omni_wheel_1_joint" type="continuous"
+                 x1="-0.111248" y1="-0.000622255" z1="0.0250389" roll1="1.5708" pitch1="-7.63278e-17" yaw1="-1.5708"
+                 parent_link="chassis"
+                 child_link="omni_wheel_1"
+                 x2="0" y2="0" z2="1" effort="10" velocity="10"/>
+
+    <xacro:link link_name="omni_wheel_2"
+                x1="8.57539e-19" y1="-1.25703e-18" z1="-0.006" roll1="0" pitch1="0" yaw1="0"
+                mass="0.0187413"
+                ixx="3.45051e-06" ixy="2.12654e-38" ixz="-7.74105e-39" iyy="3.45051e-06" iyz="-8.84188e-38" izz="6.18323e-06"
+                r="0.615686" g="0.811765" b="0.929412" a="1"
+                x2="0" y2="0" z2="-0.012" roll2="-1.5708" pitch2="5.9335e-34" yaw2="2.24267e-33"/>
+
+    <xacro:joint joint_name="omni_wheel_2_joint" type="continuous"
+                 x1="0.000289337" y1="0.110915" z1="0.0250389" roll1="-1.5708" pitch1="-3.78557e-17" yaw1="-7.67631e-18"
+                 parent_link="chassis"
+                 child_link="omni_wheel_2"
+                 x2="0" y2="0" z2="1" effort="10" velocity="10"/>
+
+    <xacro:link link_name="omni_wheel_3"
+                x1="4.32699e-18" y1="1.25703e-18" z1="-0.006" roll1="0" pitch1="0" yaw1="0"
+                mass="0.0187413"
+                ixx="3.45051e-06" ixy="-1.39921e-23" ixz="-1.02865e-37" iyy="3.45051e-06" iyz="2.29633e-37" izz="6.18323e-06"
+                r="0.615686" g="0.811765" b="0.929412" a="1"
+                x2="3.46945e-18" y2="0" z2="0" roll2="1.5708" pitch2="1.97339e-33" yaw2="-1.78537e-17"/>
+
+    <xacro:joint joint_name="omni_wheel_3_joint" type="continuous"
+                 x1="0.111826" y1="-0.000622255" z1="0.0250389" roll1="-1.5708" pitch1="-0.80872" yaw1="-1.5708"
+                 parent_link="chassis"
+                 child_link="omni_wheel_3"
+                 x2="0" y2="0" z2="1" effort="10" velocity="10"/>
+
+    <xacro:link link_name="omni_wheel_4"
+                x1="-2.61191e-18" y1="1.25703e-18" z1="-0.006" roll1="0" pitch1="0" yaw1="0"
+                mass="0.0187413"
+                ixx="3.45051e-06" ixy="-2.75896e-22" ixz="-5.2204e-37" iyy="3.45051e-06" iyz="1.1741e-38" izz="6.18323e-06"
+                r="0.615686" g="0.811765" b="0.929412" a="1"
+                x2="-3.46945e-18" y2="0" z2="0" roll2="1.5708" pitch2="-1.1376e-31" yaw2="-6.11168e-17"/>
+
+    <xacro:joint joint_name="omni_wheel_4_joint" type="continuous"
+                 x1="0.000289337" y1="-0.112159" z1="0.0250389" roll1="1.5708" pitch1="1.29425" yaw1="-1.09788e-14"
+                 parent_link="chassis"
+                 child_link="omni_wheel_4"
+                 x2="0" y2="0" z2="1" effort="10" velocity="10"/>
 </robot>
