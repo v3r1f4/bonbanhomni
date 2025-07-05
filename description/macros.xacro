@@ -15,7 +15,7 @@
             <visual>
                 <origin xyz="${x2} ${y2} ${z2}" rpy="${roll2} ${pitch2} ${yaw2}"/>
                 <geometry>
-                    <mesh filename="package://xe_tang/meshes/${link_name}.stl"/>
+                    <mesh filename="package://bonbanhomni/meshes/${link_name}.stl"/>
                 </geometry>
                 <material name="${link_name}_material">
                     <color rgba="${r} ${g} ${b} ${a}"/>
@@ -24,7 +24,7 @@
             <collision>
                 <origin xyz="${x2} ${y2} ${z2}" rpy="${roll2} ${pitch2} ${yaw2}"/>
                 <geometry>
-                    <mesh filename="package://xe_tang/meshes/${link_name}.stl"/>
+                    <mesh filename="package://bonbanhomni/meshes/${link_name}.stl"/>
                 </geometry>
             </collision>
         </link>
